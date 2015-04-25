@@ -28,7 +28,7 @@ So the steps were:
 Pre-requisites - Before the real work was done, firstly the activity names and feature names were loaded, then followed by the training and test data sets. However, just the main data sets and labels were loaded, the raw inertial data sets were ignored as they were not required
 
 1. In each case for the test and train data sets respectively, the subject Id's, activities and measeurments were combined column wise to produce one data set each. The resultant two sets were then combine row wise to leave one overall data set. This full data set then had the column names applied
-2. This next step identified the feature columns that had the term "mean()" or "std()" in their column name and then used this to fileter out any featuyre columsn that didn't match this
+2. This next step identified the feature columns that had the term "mean()" or "std()" in their column name and then used this to filter out any feature columns that didn't match this
 3. So far, the activity value had been an ID, so this was replaced with the descriptive name from the "activity_lables.txt" file
 4. The original; feature column names were not particularly descriptive and weren't always consistent, so these were replaced with more structed and readable names - refer to the "Codebook.md" within this repository for further details
 5. Finally the last step is to summarise the data by taking the mean of each measurement. This is done for each subject and activity type combination. Thisis now the final tidy data set and is written to the current working directy under the name "Smartphone tidy data means.txt"
