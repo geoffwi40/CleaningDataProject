@@ -2,7 +2,7 @@
 
 ###Summary
 As part of the cleaning data signature track from courera, the subject project is to create a tidy data 
-set from a supplied set of less than tidy data. The resultant data set is the means of all measurement for each of teh participants and each activity type involved
+set from a supplied set of less than tidy data. The resultant data set is the means of all measurement for each of the participants and each activity type involved
 
 For this proect the prescribed source data set is data of physical movementmeasurements from a Samsung smartphone. This data is suuplied by the UCI Machine learning repository
 
@@ -11,14 +11,17 @@ Description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+U
 
 ###Project Files
 
-1. The names and decriptions of the resultant data set is detailed in 'CodeBook.Txt' file within this repository
-2. The script used to create the result data set is 'run.analysis.R' within this repository
+1. The names and descriptions of the fields in the resultant data set is detailed in "CodeBook.md" file within this repository
+2. The script used to create the result data set is "run.analysis.R" within this repository
 3. The resulant data set is store as 'Smartphone tidy data means.txt'. The file can be loaded in R using 
          data<-read.table("Smartphone tidy data means.txt", header=TRUE)
 
 ###Methodology to create the data set
 
-My intention was to produce a single file which contained the both the train and test datasets with rows comprising the participant number, the activity type (text, *not* ID's) and the means of each of the mean and standard deviations. Note: this did **not** also include the Meanfrequencies
+My intention was to produce a single file which contained the both the train and test datasets with rows comprising the participant number, the activity type (text, *not* ID's) and the means of each of the mean and standard deviations. Note: this did **not** also include the Meanfrequencies. This data set was to abide by the principles of a tidy data and has
+
+1. One variable per column
+2. Each measurement on a different row
 
 So the steps were:
 Pre-requisites - Bfeore the real work was done, firstly the activityu names and feature names were loaded, then followed by the training and test data sets. Just the main data sets and labels were loaded, for the pusposes of this project, the raw inertial data sets were ignored as they were not required
