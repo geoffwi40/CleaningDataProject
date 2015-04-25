@@ -4,7 +4,7 @@
 As part of the cleaning data signature track from courera, the subject project is to create a tidy data 
 set from a supplied set of less than tidy data. The resultant data set is the means of all measurement for each of the participants and each activity type involved
 
-For this proect the prescribed source data set is data of physical movementmeasurements from a Samsung smartphone. This data is suuplied by the UCI Machine learning repository
+For this project the prescribed source data set is data of physical movement measurements from a Samsung smartphone. This data is suuplied by the UCI Machine learning repository
 
 Source Data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 Description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
@@ -24,7 +24,8 @@ My intention was to produce a single file which contained the both the train and
 2. Each measurement on a different row
 
 So the steps were:
-Pre-requisites - Bfeore the real work was done, firstly the activityu names and feature names were loaded, then followed by the training and test data sets. Just the main data sets and labels were loaded, for the pusposes of this project, the raw inertial data sets were ignored as they were not required
+
+Pre-requisites - Before the real work was done, firstly the activity names and feature names were loaded, then followed by the training and test data sets. However, just the main data sets and labels were loaded, the raw inertial data sets were ignored as they were not required
 
 1. In each case for the test and train data sets respectively, the subject Id's, activities and measeurments were combined column wise to produce one data set each. The resultant two sets were then combine row wise to leave one overall data set. This full data set then had the column names applied
 2. This next step identified the feature columns that had the term "mean()" or "std()" in their column name and then used this to fileter out any featuyre columsn that didn't match this
