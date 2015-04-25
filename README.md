@@ -18,7 +18,7 @@ Description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+U
 
 ###Methodology to create the data set
 
-My intention was to produce a single file which contained the both the train and test datasets with rows comprising the participant number, the activity type (text, *not* ID's) and the means of each of the mean and standard deviations. Note: this did **not** also include the Meanfrequencies. This data set was to abide by the principles of a tidy data and has
+My intention was to produce a single data set (in the wide style) which contained the both the train and test datasets with rows comprising the participant number, the activity type (text, *not* ID's) and the means of each of the mean and standard deviations. Note: this did **not** also include the Meanfrequencies. This data set was to abide by the principles of a tidy data and has
 
 1. One variable per column
 2. Each measurement on a different row
